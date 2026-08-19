@@ -390,3 +390,26 @@ footer {
   object-fit: contain;
   display: block;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-text {
+  font-weight: 800;
+  color: #15151a;
+}
+
+.logo-text span {
+  color: #684cff;
+}
+
