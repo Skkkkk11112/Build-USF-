@@ -377,3 +377,16 @@ footer {
   position: relative;
   z-index: 2;
 }
+/* LOGO BUILD USF */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  display: block;
+}
