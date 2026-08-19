@@ -59,7 +59,13 @@ document.querySelectorAll('.filter').forEach(btn=>{
   });
 });
 
-document.getElementById('checkoutBtn').addEventListener('click',()=>{
-  if(!cart.length){ alert('Ton panier est vide.'); return; }
-  alert('Mode démo : « Passer au paiement » ouvre ton lien Stripe.');
+document.getElementById('checkoutBtn').addEventListener('click', () => {
+
+  if (!cart.length) {
+    alert('Ton panier est vide.');
+    return;
+  }
+
+  window.location.href = "https://buy.stripe.com/test_aFa14gc1X03H2tveAM3Nm00";
+
 });
