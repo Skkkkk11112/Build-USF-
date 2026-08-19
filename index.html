@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Boutique de produits digitaux : templates, ebooks et ressources prêtes à utiliser." />
+  <title>Nova Market — Produits digitaux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#accueil">NOVA<span>MARKET</span></a>
+      <nav>
+        <a href="#produits">Produits</a>
+        <a href="#avantages">Avantages</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">
+        Panier <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">RESSOURCES DIGITALES PREMIUM</p>
+          <h1>Des produits digitaux prêts à faire gagner du temps.</h1>
+          <p class="hero-text">
+            Templates, guides et outils simples à utiliser pour créateurs, freelances et entrepreneurs.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#produits">Voir les produits</a>
+            <a class="btn ghost" href="#avantages">Comment ça marche</a>
+          </div>
+          <div class="trust-row">
+            <span>⚡ Accès instantané</span>
+            <span>🔒 Paiement sécurisé</span>
+            <span>💻 100% digital</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="mockup large">
+            <div class="mockup-tag">BEST SELLER</div>
+            <div class="mockup-icon">✦</div>
+            <h3>Social Media Pack</h3>
+            <p>120 templates premium</p>
+            <strong>24,90 €</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produits">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">BOUTIQUE</p>
+            <h2>Nos produits digitaux</h2>
+          </div>
+          <div class="filters">
+            <button class="filter active" data-filter="all">Tous</button>
+            <button class="filter" data-filter="template">Templates</button>
+            <button class="filter" data-filter="ebook">Ebooks</button>
+            <button class="filter" data-filter="business">Business</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="template">
+            <div class="product-visual purple">120<br><span>Templates</span></div>
+            <div class="product-body">
+              <span class="badge">Best seller</span>
+              <h3>Pack Instagram Pro</h3>
+              <p>120 templates Canva pour créer un feed moderne et professionnel.</p>
+              <div class="product-footer">
+                <strong>24,90 €</strong>
+                <button class="add-cart" data-name="Pack Instagram Pro" data-price="24.90">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="ebook">
+            <div class="product-visual orange">EBOOK<br><span>Marketing</span></div>
+            <div class="product-body">
+              <span class="badge">Nouveau</span>
+              <h3>Guide Marketing Digital</h3>
+              <p>Un guide pratique pour trouver ses premiers clients en ligne.</p>
+              <div class="product-footer">
+                <strong>14,90 €</strong>
+                <button class="add-cart" data-name="Guide Marketing Digital" data-price="14.90">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="business">
+            <div class="product-visual blue">50<br><span>Prompts IA</span></div>
+            <div class="product-body">
+              <span class="badge">Productivité</span>
+              <h3>Pack Prompts Business</h3>
+              <p>50 prompts prêts à copier pour gagner du temps avec l'IA.</p>
+              <div class="product-footer">
+                <strong>19,90 €</strong>
+                <button class="add-cart" data-name="Pack Prompts Business" data-price="19.90">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="template">
+            <div class="product-visual green">NOTION<br><span>Dashboard</span></div>
+            <div class="product-body">
+              <span class="badge">Organisation</span>
+              <h3>Dashboard Notion Business</h3>
+              <p>Planifie tes objectifs, contenus, tâches et revenus au même endroit.</p>
+              <div class="product-footer">
+                <strong>17,90 €</strong>
+                <button class="add-cart" data-name="Dashboard Notion Business" data-price="17.90">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="business">
+            <div class="product-visual pink">30<br><span>Scripts</span></div>
+            <div class="product-body">
+              <span class="badge">Vente</span>
+              <h3>Scripts de Vente DM</h3>
+              <p>30 scripts pour prospecter et convertir plus facilement par message.</p>
+              <div class="product-footer">
+                <strong>12,90 €</strong>
+                <button class="add-cart" data-name="Scripts de Vente DM" data-price="12.90">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="ebook">
+            <div class="product-visual dark">START<br><span>Guide PDF</span></div>
+            <div class="product-body">
+              <span class="badge">Débutant</span>
+              <h3>Lancer son Business Digital</h3>
+              <p>Le plan étape par étape pour passer d'une idée à une première offre.</p>
+              <div class="product-footer">
+                <strong>9,90 €</strong>
+                <button class="add-cart" data-name="Lancer son Business Digital" data-price="9.90">Ajouter</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits section" id="avantages">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">SIMPLE & RAPIDE</p>
+            <h2>Comment ça marche</h2>
+          </div>
+        </div>
+        <div class="benefit-grid">
+          <div class="benefit-card"><span>01</span><h3>Choisis ton produit</h3><p>Ajoute les ressources qui t'intéressent dans ton panier.</p></div>
+          <div class="benefit-card"><span>02</span><h3>Paye en ligne</h3><p>Connecte Stripe ou Shopify pour accepter de vrais paiements.</p></div>
+          <div class="benefit-card"><span>03</span><h3>Télécharge</h3><p>Après paiement, le client reçoit automatiquement son fichier.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-box">
+        <div>
+          <p class="eyebrow light">OFFRE DE LANCEMENT</p>
+          <h2>Construis plus vite. Vends plus simplement.</h2>
+          <p>Des ressources digitales conçues pour passer rapidement à l'action.</p>
+        </div>
+        <a class="btn light-btn" href="#produits">Découvrir la boutique</a>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions fréquentes</h2>
+        <details open>
+          <summary>Comment vais-je recevoir mon produit ?</summary>
+          <p>Dans la version finale, un lien de téléchargement peut être envoyé automatiquement après le paiement.</p>
+        </details>
+        <details>
+          <summary>Puis-je revendre les produits ?</summary>
+          <p>Uniquement si la licence du produit l'autorise explicitement. Ajoute les conditions de licence sur chaque fiche produit.</p>
+        </details>
+        <details>
+          <summary>Quels moyens de paiement puis-je ajouter ?</summary>
+          <p>Tu peux connecter Stripe, PayPal ou utiliser le système de paiement intégré de Shopify.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#accueil">NOVA<span>MARKET</span></a>
+        <p>Produits digitaux pour entrepreneurs et créateurs.</p>
+      </div>
+      <div>
+        <strong>Navigation</strong>
+        <a href="#produits">Produits</a>
+        <a href="#avantages">Avantages</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <strong>Légal</strong>
+        <a href="#">CGV</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Licences</a>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 Nova Market. Tous droits réservés.</div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Ton panier</h2>
+      <button id="closeCart" aria-label="Fermer">×</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty">Ton panier est vide.</p>
+    </div>
+    <div class="cart-bottom">
+      <div class="total-row"><span>Total</span><strong id="cartTotal">0,00 €</strong></div>
+      <button class="checkout-btn" id="checkoutBtn">Passer au paiement</button>
+      <small>Démo : connecte Stripe ou Shopify pour activer le paiement.</small>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
