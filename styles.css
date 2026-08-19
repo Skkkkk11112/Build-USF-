@@ -413,3 +413,105 @@ footer {
   color: #684cff;
 }
 
+:root {
+  --gold: #D4AF37;
+  --gold-light: #F4D76B;
+  --gold-dark: #8F6B12;
+
+  --purple: #5B3DF5;
+  --purple-dark: #24114F;
+
+  --black: #0B0B0F;
+  --white: #FFFFFF;
+
+  --soft-gold: #FFF6D8;
+  --soft-purple: #EEE9FF;
+}
+body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212,175,55,0.18), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(91,61,245,0.18), transparent 35%),
+    #ffffff;
+}
+
+.eyebrow {
+  color: #D4AF37;
+}
+
+.logo span,
+.logo-text span {
+  color: #D4AF37;
+}
+
+.btn.primary,
+.add-cart,
+.checkout-btn {
+  background: linear-gradient(135deg, #D4AF37, #F4D76B);
+  color: #111;
+}
+
+.mockup.large {
+  background: linear-gradient(
+    145deg,
+    #160f2b,
+    #4b2fbf,
+    #D4AF37
+  );
+}
+
+.badge {
+  background: #FFF6D8;
+  color: #8F6B12;
+}
+
+.filter.active {
+  background: linear-gradient(135deg, #D4AF37, #F4D76B);
+  color: #111;
+  border-color: #D4AF37;
+}
+
+.cta-box {
+  background: linear-gradient(
+    135deg,
+    #24114F,
+    #5B3DF5,
+    #D4AF37
+  );
+}
+
+.rgb-runner {
+  background: linear-gradient(
+    90deg,
+    #D4AF37,
+    #F4D76B,
+    #5B3DF5,
+    #D4AF37
+  );
+
+  background-size: 300% 300%;
+}
+
+.orb-1 {
+  background: #D4AF37;
+}
+
+.orb-2 {
+  background: #5B3DF5;
+}
+
+.orb-3 {
+  background: #F4D76B;
+}
+
+footer {
+  background: linear-gradient(
+    135deg,
+    #0B0B0F,
+    #24114F
+  );
+}
+
+.cart-button {
+  background: #0B0B0F;
+  border: 1px solid #D4AF37;
+}
