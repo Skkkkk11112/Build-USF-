@@ -656,4 +656,30 @@ h3 {
 .muted {
   color: #b8b8b8;
 }
+/* PETIT LOGO FIXE EN BAS À GAUCHE */
+
+.floating-logo {
+  position: fixed;
+
+  left: 18px;
+  bottom: 18px;
+
+  width: 45px;
+  height: 45px;
+
+  object-fit: contain;
+
+  z-index: 100;
+
+  opacity: 0.85;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.floating-logo:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
 
