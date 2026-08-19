@@ -61,5 +61,5 @@ document.querySelectorAll('.filter').forEach(btn=>{
 
 document.getElementById('checkoutBtn').addEventListener('click',()=>{
   if(!cart.length){ alert('Ton panier est vide.'); return; }
-  alert('Mode démo : connecte Stripe ou Shopify pour activer le paiement réel.');
+  alert('Mode démo : « Passer au paiement » ouvre ton lien Stripe.');
 });
