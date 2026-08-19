@@ -515,3 +515,118 @@ footer {
   background: #0B0B0F;
   border: 1px solid #D4AF37;
 }
+
+/* =====================================
+   BUILD USF — THEME GOLD + PURPLE
+   ===================================== */
+
+/* FOND DU SITE */
+body {
+  background:
+    radial-gradient(circle at 20% 25%, rgba(212, 175, 55, 0.20), transparent 32%),
+    radial-gradient(circle at 75% 35%, rgba(91, 61, 245, 0.16), transparent 35%),
+    #ffffff !important;
+}
+
+/* PETITS TITRES VIOLETS -> OR */
+.eyebrow {
+  color: #D4AF37 !important;
+}
+
+/* BUILD USF EN HAUT */
+.logo span,
+.logo-text span {
+  color: #D4AF37 !important;
+}
+
+/* BOUTON VOIR LES PRODUITS */
+.btn.primary {
+  background: linear-gradient(135deg, #8F6B12, #D4AF37, #F4D76B) !important;
+  color: #111 !important;
+
+  box-shadow:
+    0 8px 25px rgba(212, 175, 55, 0.30) !important;
+}
+
+/* GRANDE CARTE SOCIAL MEDIA */
+.mockup.large {
+  background:
+    linear-gradient(
+      145deg,
+      #171020 0%,
+      #342060 40%,
+      #8F6B12 72%,
+      #D4AF37 100%
+    ) !important;
+
+  box-shadow:
+    0 25px 70px rgba(212, 175, 55, 0.25),
+    0 10px 40px rgba(91, 61, 245, 0.18) !important;
+}
+
+/* BANDE ANIMÉE */
+.rgb-runner {
+  background:
+    linear-gradient(
+      90deg,
+      #24114F,
+      #5B3DF5,
+      #D4AF37,
+      #F4D76B,
+      #D4AF37,
+      #5B3DF5,
+      #24114F
+    ) !important;
+
+  background-size: 300% 300% !important;
+
+  box-shadow:
+    0 0 10px rgba(212, 175, 55, .8),
+    0 0 25px rgba(212, 175, 55, .55),
+    0 0 45px rgba(91, 61, 245, .35) !important;
+}
+
+/* HALOS DE FOND */
+.orb-1 {
+  background: #D4AF37 !important;
+}
+
+.orb-2 {
+  background: #5B3DF5 !important;
+}
+
+.orb-3 {
+  background: #F4D76B !important;
+}
+
+/* FILTRE ACTIF */
+.filter.active {
+  background: linear-gradient(135deg, #8F6B12, #D4AF37) !important;
+  color: white !important;
+  border-color: #D4AF37 !important;
+}
+
+/* BOUTONS AJOUTER AU PANIER */
+.add-cart {
+  background: linear-gradient(135deg, #8F6B12, #D4AF37, #F4D76B) !important;
+  color: #111 !important;
+}
+
+/* PANIER */
+.cart-button {
+  background: #111 !important;
+  border: 1px solid #D4AF37 !important;
+}
+
+/* CTA */
+.cta-box {
+  background:
+    linear-gradient(
+      135deg,
+      #171020,
+      #432a82,
+      #8F6B12,
+      #D4AF37
+    ) !important;
+}
+
