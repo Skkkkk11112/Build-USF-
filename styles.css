@@ -630,3 +630,30 @@ body {
     ) !important;
 }
 
+/* FOND NOIR BUILD USF */
+
+html,
+body {
+  background: #050505 !important;
+  color: #ffffff;
+}
+
+/* Header noir */
+.site-header {
+  background: #050505 !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.20);
+}
+
+/* Titres principaux blancs */
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+/* Textes secondaires */
+.hero-sub,
+.muted {
+  color: #b8b8b8;
+}
+
