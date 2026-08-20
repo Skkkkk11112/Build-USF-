@@ -143,3 +143,20 @@ const supabaseClient = window.supabase.createClient(
   SUPABASE_URL,
   SUPABASE_KEY
 );
+const accountButton = document.getElementById("accountButton");
+const authModal = document.getElementById("authModal");
+const authClose = document.getElementById("authClose");
+
+accountButton.addEventListener("click", () => {
+  authModal.classList.add("open");
+});
+
+authClose.addEventListener("click", () => {
+  authModal.classList.remove("open");
+});
+
+authModal.addEventListener("click", (event) => {
+  if (event.target === authModal) {
+    authModal.classList.remove("open");
+  }
+});
