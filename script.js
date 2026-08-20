@@ -69,3 +69,70 @@ document.getElementById('checkoutBtn').addEventListener('click', () => {
   window.location.href = "https://buy.stripe.com/test_aFa14gc1X03H2tveAM3Nm00";
 
 });
+
+const infoButtons = document.querySelectorAll('.info-btn');
+
+infoButtons.forEach((button) => {
+
+  button.addEventListener('click', (event) => {
+
+    event.stopPropagation();
+
+    const card = button.closest('.product-card');
+    const popup = card.querySelector('.product-popup');
+
+    document.querySelectorAll('.product-popup.open').forEach((openPopup) => {
+      if (openPopup !== popup) {
+        openPopup.classList.remove('open');
+        openPopup.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    const isOpen = popup.classList.contains('open');
+
+    if (isOpen) {
+      popup.classList.remove('open');
+      popup.setAttribute('aria-hidden', 'true');
+    } else {
+      popup.classList.add('open');
+      popup.setAttribute('aria-hidden', 'false');
+    }
+
+  });
+
+});
+
+
+document.querySelectorAll('.popup-close').forEach((button) => {
+
+  button.addEventListener('click', (event) => {
+
+    event.stopPropagation();
+
+    const popup = button.closest('.product-popup');
+
+    popup.classList.remove('open');
+    popup.setAttribute('aria-hidden', 'true');
+
+  });
+
+});
+
+
+document.addEventListener('click', (event) => {
+
+  if (
+    !event.target.closest('.product-popup') &&
+    !event.target.closest('.info-btn')
+  ) {
+
+    document.querySelectorAll('.product-popup.open').forEach((popup) => {
+
+      popup.classList.remove('open');
+      popup.setAttribute('aria-hidden', 'true');
+
+    });
+
+  }
+
+});
