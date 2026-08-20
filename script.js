@@ -136,3 +136,10 @@ document.addEventListener('click', (event) => {
   }
 
 });
+const SUPABASE_URL = "https://inbtiyojhlojtshbwqne.supabase.co";
+const SUPABASE_KEY = "sb_publishable_UDb6bCqHo5bhYtEeR1os1A_iRSGsAVM";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);

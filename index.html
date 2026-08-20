@@ -61,6 +61,9 @@
         <a href="#avantages">Avantages</a>
         <a href="#faq">FAQ</a>
       </nav>
+<button class="account-button" id="accountButton">
+  👤 Compte
+</button>
 
       <button
         class="cart-button"
@@ -890,13 +893,50 @@
     id="overlay"
   ></div>
 
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 <img
   src="./logo-build-usf.png"
   alt="Build USF"
   class="floating-logo"
 >
+<div class="auth-modal" id="authModal">
+
+  <div class="auth-box">
+
+    <button class="auth-close" id="authClose">×</button>
+
+    <h2 id="authTitle">Se connecter</h2>
+
+    <input
+      type="email"
+      id="authEmail"
+      placeholder="Ton e-mail"
+    >
+
+    <input
+      type="password"
+      id="authPassword"
+      placeholder="Ton mot de passe"
+    >
+
+    <button id="authSubmit">
+      Se connecter
+    </button>
+
+    <button id="authSwitch">
+      Créer un compte
+    </button>
+
+    <button id="logoutButton" style="display:none;">
+      Se déconnecter
+    </button>
+
+    <p id="authMessage"></p>
+
+  </div>
+
+</div>
 </body>
 </html>
 ```
